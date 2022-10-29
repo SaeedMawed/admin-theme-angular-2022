@@ -7,11 +7,9 @@
     box-shadow: $box-shadow;
     position: relative;
     z-index: 30;
-    @media screen and (max-width:768px) {
-        display: none;;
-    }
+
     @media screen and (max-width:992px) {
-        width: 70px;
+        width: 60px;
     }
 
     a{
@@ -31,7 +29,7 @@
             }
         }
         @media screen and (max-width:992px) {
-            width: 70px;
+            width: 60px;
         }
         .logo {
             position: relative;
@@ -105,9 +103,14 @@
 
             }
             @media screen and (max-width:992px) {
+                a{
+                    margin: 8px ;
+                    padding: .5rem;
+                    justify-content: center;
+                }
                 a:hover{
                     justify-content: center;
-                    padding-left: .5rem;
+                    padding: .5rem !important;
 
                 }
             }

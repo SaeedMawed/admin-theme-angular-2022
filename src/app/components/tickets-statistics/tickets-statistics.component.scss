@@ -5,6 +5,9 @@
     grid-template-columns: 1fr 1fr;
     gap: .75rem;
     padding: 10px;
+    @media screen  and (max-width:768px){
+            grid-template-columns: 1fr;
+    }
     .total{
         text-align: center;
         padding: 1rem;

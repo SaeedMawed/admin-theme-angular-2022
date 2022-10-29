@@ -44,7 +44,7 @@ import { SocialMediaStatsComponent } from './components/social-media-stats/socia
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SidebarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

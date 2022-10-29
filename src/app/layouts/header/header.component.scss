@@ -15,17 +15,19 @@
         box-shadow: $box-shadow;
 
         @media screen and (max-width:992px) {
-            width:calc(100% - 70px);
-            left: 70px;
-        }
-        @media screen and (max-width:768px) {
-            width:100%;
-            left: 0px;
+            width:calc(100% - 60px);
+            left: 60px;
         }
         .navbar{
             height: 100%;
             padding: 0;
             align-items: center;
+            .sidebar-btn{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                margin-right: 1rem;
+            }
             .search-box{
                 position: relative;
                 input{
@@ -40,6 +42,11 @@
                     &:hover,&:focus{
                         transition: all .3s width;
                         width: 200px;
+                    }
+                    @media screen and (max-width:768px) {
+                        &:hover,&:focus{
+                            width: 150px;
+                        }
                     }
                 }
                 i{

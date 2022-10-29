@@ -8,9 +8,17 @@
             align-items: center;
             padding: .75rem 0;
             border-bottom: 1px solid #eee;
+            @media screen  and (max-width:768px){
+                display: block !important;
+                justify-content: center;
+                text-align: center;
+            }
             img{
                 width: 100px;
                 height: 70px;
+                @media screen  and (max-width:768px){
+                    margin-bottom: .5rem;
+                }
             }
             h3{
                 font-weight: $font-bold;
@@ -27,6 +35,11 @@
                 span{
                     font-size: 12px;
                     font-weight: $font-bold;
+                }
+                @media screen  and (max-width:768px){
+                    max-width: 120px;
+                    justify-content: center;
+                    margin: auto;
                 }
 
             }

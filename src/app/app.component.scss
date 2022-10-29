@@ -188,3 +188,16 @@ h5 {
 .btn-orange{
     background-color: $c-orange !important;
 }
+
+.d-mobile{
+    display: none;
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}
+
+.d-lg{
+    @media screen and (max-width:768px) {
+        display: none !important;
+    }
+}

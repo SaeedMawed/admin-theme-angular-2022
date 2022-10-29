@@ -1,6 +1,9 @@
 @import '../../../assets/scss/variable.scss';
 .dashboard-container{
     padding: $padding;
+    @media screen  and (max-width:768px){
+            padding: $padding .5rem;
+    }
     .dashboard-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -11,5 +14,7 @@
             grid-template-columns: 1fr;
 
         }
+
+
     }
 }
