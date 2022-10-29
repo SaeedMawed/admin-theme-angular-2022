@@ -1,0 +1,36 @@
+@import '../../../assets/scss/variable.scss';
+.Social-Media-Stats-container{
+    .social-brand{
+        gap: 1rem;
+        align-items: center;
+        color: $white;
+        .logo{
+            background-color: $c-blue;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: white !important;
+                font-size: 35px;
+            }
+        }
+        h4{
+            font-size: 1.6rem !important;
+            color: $c-blue !important;
+        }
+        .logo.bg-orange{
+            background-color: $c-orange;
+        }
+        .c-orange{
+            color: $c-orange !important;
+        }
+
+        button{
+            margin-right: 1rem !important;
+        }
+
+
+    }
+}

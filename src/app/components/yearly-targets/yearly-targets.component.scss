@@ -1,0 +1,94 @@
+@import '../../../assets/scss/variable.scss';
+.yearly-targets-container{
+    .sec{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        .icon-square{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem;
+        }
+        .details{
+            margin: auto;
+            .myprogress{
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    border: 3px solid $bg-blue;
+                    width: 100%;
+
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    border: 3px solid $c-blue;
+                    width: 25%;
+                }
+
+            }
+            .precentage {
+                position: absolute;
+                top: -30px;
+                left: calc(25% - 16px);
+                background: $c-blue;
+                color: $white;
+                border-radius: 10px;
+                font-size: 10px;
+                padding: 2px 5px;
+                &::after {
+                    content: "";
+                    border-color: transparent;
+                    border-top-color: transparent;
+                    border-width: 5px;
+                    border-style: solid;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-top-color: $c-blue;
+                  }
+            }
+            .myprogress.c-orange{
+                &::before{
+                    border: 3px solid $bg-orange;
+                }
+                &::after{
+                    border: 3px solid $c-orange;
+                    width: 80%;
+                }
+            }
+            .precentage.c-orange{
+                background: $c-orange;
+                left: calc(80% - 16px);
+                &::after {
+                    border-top-color: $c-orange;
+                  }
+            }
+            .myprogress.c-green{
+                &::before{
+                    border: 3px solid $bg-green;
+                }
+                &::after{
+                    border: 3px solid $c-green;
+                    width: 75%;
+                }
+            }
+            .precentage.c-green
+            {
+                background: $c-green;
+                left: calc(75% - 16px);
+                &::after {
+                    border-top-color: $c-green;
+                  }
+            }
+
+        }
+
+
+    }
+}

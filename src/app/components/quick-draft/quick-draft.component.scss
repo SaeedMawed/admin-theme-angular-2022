@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variable.scss';
+.quick-draft-container{
+    position: relative;
+    display: block;
+
+    .input-text,.input-title{
+        width: 100%;
+        background-color: #eee;
+        border-radius: 6px;
+        outline: none;
+        padding: .5rem;
+        margin: .5rem 0;
+        border: 1px solid #eee;
+    }
+    .btn{
+        margin:.5rem 1rem .5rem auto;
+        display: flex;
+    }
+    textarea{
+        resize: none;
+        min-height: 145px;
+    }
+}

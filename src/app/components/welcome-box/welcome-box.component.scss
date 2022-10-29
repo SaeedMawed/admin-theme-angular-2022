@@ -1,0 +1,53 @@
+@import '../../../assets/scss/variable.scss';
+.welcome{
+    background-color: $white;
+    padding-bottom: 1rem;
+    .first-row{
+        color: $black;
+        background-color: #eee;
+        border-radius: 10px 10px 0 0 ;
+        h2{
+            color: $gray;
+        }
+        img{
+            width: 200px;
+            margin-left: auto;
+            display: flex;
+        }
+    }
+    .profile-img{
+        position: relative;
+        img{
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            top: -30px;
+            left: 30px;
+            border: 3px solid #fff;
+        }
+    }
+    .welcome-info{
+        gap: 1rem;
+        display: grid !important;
+        grid-template-columns: 33% 33% 33%;
+        margin: 3.5rem 3rem 0 3rem;
+        text-align: center;
+        .sec{
+            h3{
+                font-weight: $font-bold;
+            }
+            h4{
+                margin-top: 15px;
+                color: $gray;
+            }
+        }
+    }
+
+    .btn{
+        display: flex;
+        margin: 2rem 2rem ;
+
+        margin-left: auto;
+    }
+}

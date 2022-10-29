@@ -1,0 +1,190 @@
+@import '../assets/scss/variable.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.5rem !important;
+}
+
+h2{
+    font-size: 1rem !important;
+    color: $gray;
+}
+
+h3{
+    font-size: 16px !important;
+}
+
+h4 {
+    font-size: 14px !important;
+    color: $gray;
+}
+
+h5 {
+    font-size: 15px !important;
+}
+
+.p-3{
+    padding: 2rem !important;
+}
+
+.img-circle{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.content-container{
+    width: 100%;
+}
+
+.main-title{
+    font-weight: 600;
+    font-size: 2rem !important;
+    position: relative;
+    margin-bottom: 2rem;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 150px;
+        border: 3px solid $white;
+        border-radius: 25px;
+        bottom: -15px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        border: 3px solid $black;
+        border-radius: 25px;
+        bottom: -15px;
+        left: 0;
+    }
+}
+
+.align-center{
+    align-items: center;
+}
+
+.right-center{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.border-thin{
+    border: 1px solid #eee;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+
+
+.rad-10{
+    border-radius: 10px;
+}
+
+.rad-6{
+    border-radius: 6px;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.bg-orange{
+    background-color: rgb(245 158 11 / 20%);
+
+}
+.bg-blue{
+    background-color: rgb(0 117 255 / 20%);
+}
+.bg-green{
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.c-orange{
+    color: #f59e0b;
+}
+
+.c-green{
+    color: #22e55e;
+}
+
+.c-blue{
+    color:#0075ff
+}
+
+/*********************************/
+.before-orange{
+    border-color: $c-orange !important;
+    &::before,&::after{
+        background-color: $c-orange !important;
+    }
+}
+
+.before-blue{
+    border-color: $c-blue !important;
+    &::before,&::after{
+        background-color: $c-blue !important;
+    }
+}
+
+.before-green{
+    border-color: $c-green !important;
+    &::before,&::after{
+        background-color: $c-green !important;
+    }
+}
+
+.before-danger{
+    border-color: $danger !important;
+    &::before,&::after{
+        background-color: $danger !important;
+    }
+}
+
+.mybtn{
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: $white;
+    outline: none;
+}
+.btn-blue{
+    background: $c-blue !important;
+}
+
+.btn-green{
+    background-color: $c-green !important;
+}
+
+.btn-danger{
+    background-color: $danger !important;
+}
+
+.btn-orange{
+    background-color: $c-orange !important;
+}

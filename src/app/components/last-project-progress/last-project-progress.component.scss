@@ -1,0 +1,70 @@
+@import '../../../assets/scss/variable.scss';
+.last-project-progress-container{
+    position: relative;
+    ul{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 11px;
+            width: 2px;
+            height: 100%;
+            background-color: $c-blue;
+        }
+        li{
+            margin: 1.5rem 2rem;
+            position: relative;
+            padding-left: .5rem;
+            font-weight: $font-bold;
+            display: flex;
+
+            &::before{
+                position:absolute;
+                content: '';
+                left: -2rem;
+                top: 50%;
+                border-radius: 50px;
+                background-color: white;
+                width: 24px;
+                height: 24px;
+                outline: 2px solid $c-blue;
+                transform: translateY(-50%);
+                border: 2px solid white;
+                display: block;
+                z-index: 1;
+            }
+            .done::after{
+                content: '';
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                left: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $c-blue;
+                border-radius: 50%;
+                z-index: 2;
+            }
+
+            .process::after{
+                animation: fade-in-out 2s infinite;
+            }
+        }
+    }
+
+    .image {
+        position: absolute;
+        width: 150px;
+        opacity: 0.7;
+        right: 50px;
+        bottom: 25px;
+      }
+}
+
+@keyframes fade-in-out {
+    0%   {opacity: 0;}
+
+    50% {opacity: 1;}
+
+    100% {opacity: 0;}
+  }

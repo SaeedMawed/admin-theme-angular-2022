@@ -1,0 +1,15 @@
+@import '../../../assets/scss/variable.scss';
+.dashboard-container{
+    padding: $padding;
+    .dashboard-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        margin-top: 3rem;
+        @media screen and (max-width:992px) {
+            grid-template-columns: 1fr;
+
+        }
+    }
+}

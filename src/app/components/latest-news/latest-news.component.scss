@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variable.scss';
+
+.latest-news-container{
+    ul {
+        margin: 1rem 0;
+        li {
+            gap: .75rem;
+            align-items: center;
+            padding: .75rem 0;
+            border-bottom: 1px solid #eee;
+            img{
+                width: 100px;
+                height: 70px;
+            }
+            h3{
+                font-weight: $font-bold;
+            }
+            h4{
+                color: $gray;
+            }
+            .date-box{
+                background-color: #ccc;
+                border-radius: 6px !important;
+                padding: 3px 5px;
+                display: flex;
+                margin-left: auto;
+                span{
+                    font-size: 12px;
+                    font-weight: $font-bold;
+                }
+
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+
+    }
+}
