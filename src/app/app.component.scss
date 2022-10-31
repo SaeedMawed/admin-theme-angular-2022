@@ -45,7 +45,7 @@ h5 {
 }
 
 .p-3{
-    padding: 2rem !important;
+    padding: 1rem !important;
 }
 
 .img-circle{
@@ -55,7 +55,7 @@ h5 {
 }
 
 .content-container{
-    width: 100%;
+    //width: 100%;
 }
 
 .main-title{
@@ -201,3 +201,30 @@ h5 {
         display: none !important;
     }
 }
+
+
+/* page grid */
+.page-container{
+    padding: $padding;
+    overflow: hidden;
+    @media screen  and (max-width:768px){
+            padding: $padding .5rem;
+    }
+    .page-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        margin-top: 3rem;
+        @media screen and (max-width:992px) {
+            grid-template-columns: auto;
+
+        }
+    }
+
+}
+
+.rad-10.bg-white{
+    overflow: hidden;
+}
+

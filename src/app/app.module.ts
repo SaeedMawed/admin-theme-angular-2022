@@ -19,6 +19,8 @@ import { LastProjectProgressComponent } from './components/last-project-progress
 import { RemindersComponent } from './components/reminders/reminders.component';
 import { LatestPostComponent } from './components/latest-post/latest-post.component';
 import { SocialMediaStatsComponent } from './components/social-media-stats/social-media-stats.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { SiteControlComponent } from './components/site-control/site-control.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,15 @@ import { SocialMediaStatsComponent } from './components/social-media-stats/socia
     LastProjectProgressComponent,
     RemindersComponent,
     LatestPostComponent,
-    SocialMediaStatsComponent
+    SocialMediaStatsComponent,
+    SettingsComponent,
+    SiteControlComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [SidebarComponent],
+  providers: [SidebarComponent,HeaderComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
