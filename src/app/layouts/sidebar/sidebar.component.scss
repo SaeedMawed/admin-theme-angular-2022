@@ -71,7 +71,7 @@
                 gap: 1rem;
                 font-size: 16px;
                 color: $black;
-                padding: 0.5rem;
+                padding: 0.5rem 1rem;
                 margin: .5rem 1rem;
                 border-radius: $border-radius;
                 transition: all .3s ease;
@@ -87,7 +87,7 @@
                 }
                 &:hover{
                     background-color: #eee;
-                    padding-left: 20px;
+                    padding-left:1.25rem !important;
 
                 }
 
@@ -96,15 +96,7 @@
                 a{
                     margin: 8px ;
                     padding: .5rem;
-                    justify-content: center;
                 }
-                a:hover{
-                    justify-content: center;
-                    padding: .5rem !important;
-
-                }
-
-
             }
             a.active{
                 background-color: #eee;

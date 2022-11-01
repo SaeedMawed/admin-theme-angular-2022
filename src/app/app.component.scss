@@ -45,7 +45,7 @@ h5 {
 }
 
 .p-3{
-    padding: 1rem !important;
+    padding: 2rem !important;
 }
 
 .img-circle{
@@ -264,7 +264,7 @@ h5 {
         top: 0;
         background-color: white;
         padding: 0 $padding;
-        //box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
 
         @media screen and (max-width:992px) {
             width:100%;
