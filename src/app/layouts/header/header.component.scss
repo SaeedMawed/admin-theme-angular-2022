@@ -12,7 +12,7 @@
         top: 0;
         background-color: white;
         padding: 0 $padding;
-        box-shadow: $box-shadow;
+        //box-shadow: $box-shadow;
 
         @media screen and (max-width:992px) {
             width:calc(100% - 60px);

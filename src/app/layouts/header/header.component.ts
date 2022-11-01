@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeControllerService } from 'src/app/services/theme-controller.service';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +7,10 @@ import { ThemeControllerService } from 'src/app/services/theme-controller.servic
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private tc:ThemeControllerService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  openSidebar(){
-    this.tc.toggleSidebar();
-  }
 
 }

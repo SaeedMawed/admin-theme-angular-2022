@@ -8,10 +8,6 @@
     position: relative;
     z-index: 30;
 
-    @media screen and (max-width:992px) {
-        width: 60px;
-    }
-
     a{
         text-decoration: none !important;
     }
@@ -32,9 +28,6 @@
                 text-align: center;
                 font-weight: $font-bold;
             }
-        }
-        @media screen and (max-width:992px) {
-            width: 60px;
         }
         .logo {
             position: relative;
@@ -92,14 +85,6 @@
                     text-align: center;
 
                 }
-
-                @media screen and (max-width:992px) {
-                     span{
-                        display: none;
-                     }
-                }
-
-
                 &:hover{
                     background-color: #eee;
                     padding-left: 20px;

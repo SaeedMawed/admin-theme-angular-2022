@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +24,7 @@ import { LatestPostComponent } from './components/latest-post/latest-post.compon
 import { SocialMediaStatsComponent } from './components/social-media-stats/social-media-stats.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { SiteControlComponent } from './components/site-control/site-control.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -46,9 +50,12 @@ import { SiteControlComponent } from './components/site-control/site-control.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,MatIconModule
   ],
-  providers: [SidebarComponent,HeaderComponent],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

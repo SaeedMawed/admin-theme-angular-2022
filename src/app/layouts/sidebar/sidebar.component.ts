@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeControllerService } from 'src/app/services/theme-controller.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,8 +7,7 @@ import { ThemeControllerService } from 'src/app/services/theme-controller.servic
 })
 export class SidebarComponent implements OnInit {
 
-  toggle:boolean=false;
-  constructor(private tc:ThemeControllerService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
