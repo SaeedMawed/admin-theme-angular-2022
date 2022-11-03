@@ -1,0 +1,39 @@
+.social-info-container{
+    .form-group{
+        margin: 1rem 0;
+        .input-group{
+            margin-bottom: 1.25rem;
+            &:focus{
+                color: #000 !important;
+                box-shadow: 0;
+                background-color: red;
+            }
+
+        }
+
+        #addon-wrapping {
+            display: flex;
+            background-color: #ddd;
+        }
+        i,input {
+            color: #aaa;
+            outline: none;
+            border: 1px solid #ccc;
+            &:focus{
+                color: #666;
+                box-shadow: none !important;
+            }
+        }
+        input{
+            background-color: #eee;
+            &::placeholder {
+                font-size: 14px;
+            }
+
+        }
+
+        input::focus + i {
+            color: #000;
+        }
+    }
+}

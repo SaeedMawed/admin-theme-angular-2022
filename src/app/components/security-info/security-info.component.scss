@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variable.scss';
+.security-info-container{
+    ul{
+        margin-top: 1rem !important;
+        li{
+            display: flex;
+            padding: 1.25rem 0;
+            align-items: center;
+        }
+        button{
+            padding: 5px 12px;
+            background-color: $c-blue;
+            color: #fff;
+            outline: 0;
+            border: 0;
+            height: 30px;
+        }
+        .bg-gray{
+            background-color: #eee !important;
+            color: #000;
+        }
+    }
+}

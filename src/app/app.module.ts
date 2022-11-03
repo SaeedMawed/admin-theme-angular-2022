@@ -25,6 +25,11 @@ import { SocialMediaStatsComponent } from './components/social-media-stats/socia
 import { SettingsComponent } from './pages/settings/settings.component';
 import { SiteControlComponent } from './components/site-control/site-control.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GeneralInfoComponent } from './components/general-info/general-info.component';
+import { SecurityInfoComponent } from './components/security-info/security-info.component';
+import { SocialInfoComponent } from './components/social-info/social-info.component';
+import { WidgetsControlComponent } from './components/widgets-control/widgets-control.component';
+import { BackupManagerComponent } from './components/backup-manager/backup-manager.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +51,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LatestPostComponent,
     SocialMediaStatsComponent,
     SettingsComponent,
-    SiteControlComponent
+    SiteControlComponent,
+    GeneralInfoComponent,
+    SecurityInfoComponent,
+    SocialInfoComponent,
+    WidgetsControlComponent,
+    BackupManagerComponent
   ],
   imports: [
     BrowserModule,

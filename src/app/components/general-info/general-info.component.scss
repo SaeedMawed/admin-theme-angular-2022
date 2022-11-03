@@ -1,0 +1,51 @@
+@import '../../../assets/scss/variable.scss';
+
+.general-info-container{
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .25rem;
+        label{
+            margin-top: 1rem;
+        }
+        input{
+            padding: .25rem .5rem;
+            border: 1px solid #ddd;
+        }
+        .d-grid{
+            grid-template-columns: 80% 20%;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+            .email-input{
+                display: grid;
+                gap: .5rem;
+                label{
+                    margin-top: 0;
+                    margin-right: 1rem;
+                }
+                input{
+                    background-color: #ddd;
+                    opacity: .5;
+                    &:disabled{
+                        cursor: no-drop;
+                    }
+                }
+            }
+            button{
+                border: 0;
+                background-color: transparent;
+                color: #000;
+                margin-top: 2rem;
+                color: $c-blue;
+
+            }
+        }
+        button{
+            border: 0;
+            background-color: transparent;
+            color: #000;
+
+        }
+    }
+}

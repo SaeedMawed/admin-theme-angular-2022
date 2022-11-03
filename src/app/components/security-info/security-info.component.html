@@ -1,0 +1,33 @@
+<div class="security-info-container p-3 bg-white rad-10">
+    <h1>Security Info</h1>
+    <h2>Security Information About Your Account</h2>
+    <ul>
+        <li class="border-bottom">
+            <div class="right-sec">
+                <h3>Password</h3>
+                <h4>Last Change On 25/10/2021</h4>
+            </div>
+            <button class="right-center mybtn">change</button>
+        </li>
+        <li class="border-bottom">
+            <div class="right-sec">
+                <h3>Two-Factor Authentication</h3>
+                <h4>Enable/Disable The Feature</h4>
+            </div>
+            <div class="toggle-btn right-center">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" (click)="toggleCheck()" checked>
+                    <i class="fas fa-check true-mark" [ngClass]="{'d-block': checked == true}"></i>
+                    <i class="fas fa-times wrong-mark " [ngClass]="{'d-block': checked == false}"></i>
+                  </div>
+            </div>
+        </li>
+        <li class="">
+            <div class="right-sec">
+                <h3>Devices</h3>
+                <h4>Check The Login Devices List</h4>
+            </div>
+            <button class="right-center mybtn bg-gray">Devices</button>
+        </li>
+    </ul>
+</div>
