@@ -1,0 +1,25 @@
+.skills-container{
+    margin-top: 1rem;
+    ul{
+        li{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            @media screen and (max-width:768px) {
+                justify-content: center;
+            }
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            span{
+                background-color: #eee;
+                padding: 4px 8px;
+                border-radius: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+}

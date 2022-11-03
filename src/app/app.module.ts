@@ -30,6 +30,12 @@ import { SecurityInfoComponent } from './components/security-info/security-info.
 import { SocialInfoComponent } from './components/social-info/social-info.component';
 import { WidgetsControlComponent } from './components/widgets-control/widgets-control.component';
 import { BackupManagerComponent } from './components/backup-manager/backup-manager.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ProfileMainCardComponent } from './components/profile-main-card/profile-main-card.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { LatestActivitiesComponent } from './components/latest-activities/latest-activities.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +62,13 @@ import { BackupManagerComponent } from './components/backup-manager/backup-manag
     SecurityInfoComponent,
     SocialInfoComponent,
     WidgetsControlComponent,
-    BackupManagerComponent
+    BackupManagerComponent,
+    ProfileComponent,
+    ProfileMainCardComponent,
+    SkillsComponent,
+    LatestActivitiesComponent,
+    ProjectsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
