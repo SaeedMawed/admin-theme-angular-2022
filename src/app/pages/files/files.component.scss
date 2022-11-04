@@ -1,0 +1,14 @@
+.page-flex{
+
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.page-grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    @media screen and  (max-width:992px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

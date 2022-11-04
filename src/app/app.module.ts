@@ -42,6 +42,9 @@ import { FriendsComponent } from './pages/friends/friends.component';
 import { FriendCardComponent } from './components/friend-card/friend-card.component';
 import { PlansComponent } from './pages/plans/plans.component';
 import { PlanCardComponent } from './components/plan-card/plan-card.component';
+import { FilesComponent } from './pages/files/files.component';
+import { FileCardsComponent } from './components/file-cards/file-cards.component';
+import { FilesStatisticsComponent } from './components/files-statistics/files-statistics.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +83,10 @@ import { PlanCardComponent } from './components/plan-card/plan-card.component';
     FriendsComponent,
     FriendCardComponent,
     PlansComponent,
-    PlanCardComponent
+    PlanCardComponent,
+    FilesComponent,
+    FileCardsComponent,
+    FilesStatisticsComponent
   ],
   imports: [
     BrowserModule,

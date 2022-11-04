@@ -1,0 +1,14 @@
+<div class="uni-container" >
+    <div class="file-cards-container p-3 bg-white rad-10" *ngFor="let file of files">
+        <div class="top-sec border-bottom">
+            <i class="fas fa-download"></i>
+            <img src="../../../assets/imgs/{{file.path}}.svg" alt="">
+            <h3 class="file-title">{{file.title}}</h3>
+            <h4>{{file.author}}</h4>
+        </div>
+        <div class="bottom-sec d-flex justify-content-between">
+            <span>{{file.date}}</span>
+            <span>{{file.size}}MB</span>
+        </div>
+    </div>
+</div>
