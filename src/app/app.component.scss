@@ -244,7 +244,7 @@ h5 {
     overflow: hidden !important;
 }
 .mat-drawer-backdrop.mat-drawer-shown{
-    background-color: transparent;
+    opacity: .5;
 }
 .mat-toolbar-row{
     height: 70px;

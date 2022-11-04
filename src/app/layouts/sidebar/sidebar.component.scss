@@ -12,9 +12,6 @@
         text-decoration: none !important;
     }
 
-    .mobile_sidebar{
-        background-color: red !important;
-    }
 
     .sidebar{
         position: fixed;
@@ -57,7 +54,7 @@
                     border: 4px solid $white;
                 }
                 @media screen and (max-width:992px) {
-                    display: none;
+                    //display: none;
                 }
             }
 
