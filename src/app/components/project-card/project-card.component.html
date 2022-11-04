@@ -1,37 +1,25 @@
-<div class="project-card-container p-3 bg-white rad-10">
-    <span class="date">15/10/2021</span>
-    <h3>Elzero Dashboard</h3>
-    <h4>Elzero Dashboard Project Design And Programming And Hosting</h4>
-    <ul class="team">
-        <li>
-            <img src="./assets/imgs/team-01.png" alt="">
-        </li>
-        <li>
-            <img src="./assets/imgs/team-02.png" alt="">
-        </li>
-        <li>
-            <img src="./assets/imgs/team-03.png" alt="">
-        </li>
-        <li>
-            <img src="./assets/imgs/team-04.png" alt="">
-        </li>
-    </ul>
-    <ul class="tasks">
-        <li>
-            <span>Programming</span>
-        </li>
-        <li>
-            <span>Design</span>
-        </li>
-        <li>
-            <span>Hosting</span>
-        </li>
-        <li>
-            <span>Marketing</span>
-        </li>
-    </ul>
-    <div class="bottom-sec d-flex justify-content-between">
-        <div class="myprogress"></div>
-        <h4>$2500</h4>
+<div class="uni-container" >
+    <div class="project-card-container p-3 bg-white rad-10" *ngFor="let project of porjectList">
+        <span class="date">{{project.date}}</span>
+        <h3>{{project.title}}</h3>
+        <h4>{{project.desc}}</h4>
+        <ul class="team">
+            <li *ngFor="let person of project.team">
+                <img src="./assets/imgs/team-0{{person}}.png" alt="">
+            </li>
+        </ul>
+        <ul class="tasks">
+            <li *ngFor="let task of project.tasks">
+                <span>{{task}}</span>
+            </li>
+
+        </ul>
+        <div class="bottom-sec d-flex justify-content-between">
+            <div class="myprogress">
+                <span [style.width.%]="project.progress"
+                [ngClass]="{'border-danger' : project.progress < 50,'border-blue' :project.progress >= 50 && project.progress < 75,'border-green' :project.progress >= 75}"></span>
+            </div>
+            <h4>${{project.budget}}</h4>
+        </div>
     </div>
 </div>

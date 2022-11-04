@@ -36,6 +36,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { LatestActivitiesComponent } from './components/latest-activities/latest-activities.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { CoursesComponent } from './pages/courses/courses.component';
+import { CourseCardComponent } from './components/course-card/course-card.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     SkillsComponent,
     LatestActivitiesComponent,
     ProjectsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    CoursesComponent,
+    CourseCardComponent
   ],
   imports: [
     BrowserModule,
