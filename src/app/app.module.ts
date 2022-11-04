@@ -38,6 +38,10 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { CoursesComponent } from './pages/courses/courses.component';
 import { CourseCardComponent } from './components/course-card/course-card.component';
+import { FriendsComponent } from './pages/friends/friends.component';
+import { FriendCardComponent } from './components/friend-card/friend-card.component';
+import { PlansComponent } from './pages/plans/plans.component';
+import { PlanCardComponent } from './components/plan-card/plan-card.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +76,11 @@ import { CourseCardComponent } from './components/course-card/course-card.compon
     ProjectsComponent,
     ProjectCardComponent,
     CoursesComponent,
-    CourseCardComponent
+    CourseCardComponent,
+    FriendsComponent,
+    FriendCardComponent,
+    PlansComponent,
+    PlanCardComponent
   ],
   imports: [
     BrowserModule,

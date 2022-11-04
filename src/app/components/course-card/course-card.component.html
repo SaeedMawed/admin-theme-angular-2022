@@ -1,1 +1,16 @@
-<p>course-card works!</p>
+<div class="uni-container" >
+    <div class="course-card-container  bg-white rad-10" *ngFor="let course of courseList">
+        <div class="top-sec" [style.background-image]="'url(./assets/imgs/course-0'+course.id+'.jpg)'">
+            <img src="./assets/imgs/team-0{{course.engineer_id}}.png" alt="">
+        </div>
+        <div class="middle-sec border-bottom">
+            <h3>{{course.title}}</h3>
+            <h4>{{course.desc}}</h4>
+            <button>Course Info</button>
+        </div>
+        <div class="bottom-sec d-flex justify-content-between">
+            <span><i class="far fa-user"></i>{{course.subscriber}}</span>
+            <span>$ {{course.price}}</span>
+        </div>
+    </div>
+</div>

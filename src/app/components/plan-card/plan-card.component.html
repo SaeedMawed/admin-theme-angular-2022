@@ -1,0 +1,48 @@
+<div class="uni-container">
+    <div class="plan-card-container p-3 bg-white rad-10" *ngFor="let plan of planList">
+        <div class="top-sec" [ngClass]="{'bg-green':plan.id == 1 , 'bg-blue':plan.id == 2 , 'bg-orange':plan.id == 3 }"         >
+            <h3>{{plan.title}}</h3>
+            <span class="price"><i class="fas fa-dollar-sign"></i>{{plan.price}}</span>
+        </div>
+        <ul>
+            <li>
+                <span  [ngClass]="plan.AccessAllTextLessons ? 'true-mark':'wrong-mark' ">Access All Text Lessons</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.AccessAllVideosLessons ? 'true-mark':'wrong-mark' ">Access All Videos Lessons</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.AppearOnLeaderboard ? 'true-mark':'wrong-mark' ">Appear On Leaderboard</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.BrowseContentWithoutAds ? 'true-mark':'wrong-mark' ">Browse Content Without Ads</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.AccessAllAssignments ? 'true-mark':'wrong-mark' ">Access All Assignments</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.GetDailyPrizes ? 'true-mark':'wrong-mark' "> Get Daily Prizes</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.EarnCertificate ? 'true-mark':'wrong-mark' "> Earn Certificate</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.SpaceForHostingFiles ? 'true-mark':'wrong-mark' ">1 GB Space For Hosting Files</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <li>
+                <span [ngClass]="plan.AccessBadgeSystem ? 'true-mark':'wrong-mark' "> Access Badge System</span>
+                <i class="fas fa-info-circle"></i>
+            </li>
+            <button class="mybtn" [ngClass]="{'bg-green':plan.id == 1 , 'bg-blue':plan.id == 2 , 'bg-orange':plan.id == 3 }">Subscribe</button>
+
+        </ul>
+    </div>
+</div>

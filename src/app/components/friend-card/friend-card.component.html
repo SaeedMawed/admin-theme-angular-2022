@@ -1,0 +1,23 @@
+<div class="uni-container">
+    <div class="friend-card-container p-3 bg-white rad-10" *ngFor="let friend of friendList">
+        <div class="top-sec border-bottom">
+            <i class="fas fa-phone"></i>
+            <i class="fas fa-envelope envelop"></i>
+            <img src="./assets/imgs/friend-0{{friend.id}}.jpg" alt="">
+            <h3>{{friend.name}}</h3>
+            <h4>{{friend.position}}</h4>
+        </div>
+        <div class="middle-sec border-bottom">
+            <span><i class="far fa-smile"></i>{{friend.friends}} Friend</span>
+            <span><i class="fas fa-train"></i>{{friend.projects}} Projects</span>
+            <span><i class="fas fa-newspaper"></i>{{friend.articles}} Articles</span>
+        </div>
+        <div class="bottom-sec">
+            <span>Joined 02/10/2021</span>
+            <div class="gap-8">
+                <button class="profile-btn">Profile</button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>

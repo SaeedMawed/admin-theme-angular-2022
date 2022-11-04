@@ -1,0 +1,111 @@
+@import '../../../assets/scss/variable.scss';
+.uni-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+    @media screen and (max-width:768px) {
+        grid-template-columns: auto;
+    }
+    .top-sec{
+        text-align: center;
+       // background-color: $c-green;
+        color: #fff;
+        border: 2px solid $white;
+        outline: 2px solid ;
+        margin-bottom: 1.6rem;
+        font-weight: 700;
+        padding: 1.5rem 0;
+        h3{
+            font-size: 1.5rem !important;
+        }
+        span {
+            font-size: 1.8rem;
+            position: relative;
+            i{
+                position: absolute;
+                top: 0px;
+                left: -15px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    ul {
+        width: 100%;
+        li {
+            display: flex;
+            gap: .75rem;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            justify-content: space-between;
+            padding-left: 3rem;
+
+            span{
+                position: relative;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+            }
+            .true-mark::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f00c";
+                font-weight: 900;
+                position: absolute;
+                left: -2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $c-green;
+                transition: 0.3s;
+                font-size: 22px !important;
+            }
+            .wrong-mark::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f00d";
+                font-weight: 900;
+                position: absolute;
+                left: -2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $danger;
+                transition: 0.3s;
+                font-size: 22px !important;
+            }
+            i{
+                cursor: pointer;
+            }
+
+        }
+        .mybtn{
+            color: $white;
+            display: flex;
+            margin: 1.5rem auto;
+            margin-bottom: 0;
+            padding: .5rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem !important;
+            transition: all .3s ease-in-out;
+            &:hover{
+                opacity: .7;
+            }
+         }
+
+
+    }
+
+
+    .bg-green{
+        background-color: #22c55e;
+        outline-color: #22c55e;
+    }
+    .bg-blue{
+        background-color: $c-blue;
+        outline-color: $c-blue;
+    }
+    .bg-orange{
+        background-color: $c-orange;
+        outline-color: $c-orange;
+    }
+}
